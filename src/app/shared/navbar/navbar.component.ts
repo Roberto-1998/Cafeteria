@@ -1,17 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
+
+
 export class NavbarComponent implements OnInit {
+
+  public scrollOffset:number=0;
 
   classOpen=false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener("window:scroll", ['$event'])
+  doSomethingOnScroll($event:any){
+   this.scrollOffset = $event.srcElement.children[0].scrollTop;
+   console.log(this.scrollOffset);
   }
 
   addBodyClass(){
@@ -22,10 +33,16 @@ export class NavbarComponent implements OnInit {
     }else{
       body?.classList.remove('open');
     }
-
-
-
-
   }
+
+
+
+
+
+
+
+
+
+
 
 }

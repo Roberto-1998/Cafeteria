@@ -1,80 +1,12 @@
-<!--================Offcanvus Menu Area =================-->
-<div class="side_menu">
-    <a class="logo" href="#">
-        <img src="assets/img/logo.png" alt="">
-    </a>
-    <ul class="list menu_right">
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="about-us.html">About</a>
-        </li>
-        <li>
-            <a href="menu.html">Menu</a>
-        </li>
-        <li>
-            <a href="book-table.html">Book a table</a>
-        </li>
-        <li>
-            <a href="#">Pages</a>
-            <ul class="list">
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="elements.html">Elements</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Blog</a>
-            <ul class="list">
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="single-blog.html">Blog Details</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
-    <ul class="list social">
-        <li>
-            <a href="#">
-                <i class="fa fa-facebook"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-dribbble"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fa fa-behance"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-<!--================End Offcanvus Menu Area =================-->
-
 <!--================Header Menu Area =================-->
-<header class="header_area home_menu">
+<header class="header_area " [ngClass]="{'navbar_fixed':scrollOffset>80}" (window:scroll)="doSomethingOnScroll($event)">
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand logo_h" href="index.html">
-                    <img src="assets/img/logo-2.png" alt="">
+                    <img class="logo-1" src="assets/img/logo.png" alt="">
+                    <img class="logo-2" src="assets/img/logo-2.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -84,43 +16,12 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="book-table.html">Book a table</a>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="elements.html">Elements</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item submenu dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="single-blog.html">Blog Details</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/reservation">Book a table</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -128,15 +29,3 @@
     </div>
 </header>
 <!--================Header Menu Area =================-->
-
-<!--================Canvus Menu Area =================-->
-<div class="canvus_menu">
-    <div class="container">
-        <div class="float-right">
-            <div class="toggle_icon" (click)="addBodyClass()">
-                <span></span>
-            </div>
-        </div>
-    </div>
-</div>
-<!--================End Canvus Menu Area =================-->
