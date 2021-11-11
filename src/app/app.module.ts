@@ -14,6 +14,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PagesComponent } from './pages/pages.component';
+import { BannerComponent } from './shared/banner/banner.component';
+import { MainTitleComponent } from './shared/main-title/main-title.component';
 
 
 
@@ -31,7 +33,9 @@ import { PagesComponent } from './pages/pages.component';
     LoginComponent,
     AboutComponent,
     NotFoundComponent,
-    PagesComponent
+    PagesComponent,
+    BannerComponent,
+    MainTitleComponent
   ],
   imports: [
     BrowserModule,

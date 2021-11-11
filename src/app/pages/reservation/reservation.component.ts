@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
+  etiquetaPadre={
+    title:'Book a Table',
+    link:'/reservation'
+  }
+
+  titlePadre:string='Pick a Date!!';
+
   constructor() { }
 
   ngOnInit(): void {

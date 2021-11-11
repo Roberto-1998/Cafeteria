@@ -1,20 +1,13 @@
+<!--================ Banner Area =================-->
+<app-banner [etiquetaHijo]="etiquetaPadre"></app-banner>
+<!--================End Banner Area =================-->
+
+
+
 <!--================Book Table Area =================-->
 <section class="reservation">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="main_title position-relative">
-                    <h1>Make Reservation</h1>
-                    <hr>
-                    <div class="round-planet planet">
-                        <div class="round-planet planet2">
-                            <div class="shape shape1"></div>
-                            <div class="shape shape2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <app-main-title [title]="titlePadre"></app-main-title>
 
         <div class="book_table_inner row align-items-center">
             <div class="offset-lg-2 offset-md-1 col-lg-8 col-md-10">

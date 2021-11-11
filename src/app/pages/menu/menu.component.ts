@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  etiquetaPadre={
+    title:'Menu',
+    link:'/menu'
+  }
+
+  titlePadre:string='Our Favorite Menu'
+
   constructor() { }
 
   ngOnInit(): void {

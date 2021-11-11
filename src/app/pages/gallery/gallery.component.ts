@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
+  etiquetaPadre={
+    title:'Gallery',
+    link:'/gallery'
+  }
+
+  titlePadre:string='Foodbar Gallery';
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

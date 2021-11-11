@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+
+  etiquetaPadre={
+    title:'About',
+    link:'/about'
+  }
+
   constructor() { }
 
   ngOnInit(): void {
