@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login.component';
+
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -9,9 +9,12 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ReservationComponent } from './pages/reservation/reservation.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PagesComponent } from './pages/pages.component';
+import { LoginComponent } from './auth/login/login.component';
+import { AdminComponent } from './auth/admin/admin.component';
 
 const routes: Routes = [
-  {path:'admin', component:LoginComponent},
+  {path:'login', component:LoginComponent},
+  {path:'admin', component:AdminComponent},
   {path:'',
      component:PagesComponent,
      children:[
