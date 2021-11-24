@@ -19,15 +19,34 @@ import { MainTitleComponent } from './shared/main-title/main-title.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LoginComponent } from './auth/login/login.component';
-import { SidebarComponent } from './auth/sidebar/sidebar.component';
+
 import { AdminComponent } from './auth/admin/admin.component';
 
+import { StartersComponent } from './auth/starters/starters.component';
+import { MainCoursesComponent } from './auth/main-courses/main-courses.component';
+import { DessertsComponent } from './auth/desserts/desserts.component';
+import { BeveragesComponent } from './auth/beverages/beverages.component';
+import { TableProductsComponent } from './auth/shared/table-products/table-products.component';
+
+
+import {MatTableModule} from '@angular/material/table';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { CategoryTitleComponent } from './auth/category-title/category-title.component';
+import { AddProductComponent } from './auth/add-product/add-product.component';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 
 
@@ -50,8 +69,15 @@ import {MatExpansionModule} from '@angular/material/expansion';
     PagesComponent,
     BannerComponent,
     MainTitleComponent,
-    SidebarComponent,
-    AdminComponent
+
+    AdminComponent,
+    StartersComponent,
+    MainCoursesComponent,
+    DessertsComponent,
+    BeveragesComponent,
+    TableProductsComponent,
+    CategoryTitleComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +88,16 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTableModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    MatInputModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatTreeModule,
+    MatChipsModule,
+    MatCheckboxModule
 
   ],
   providers: [],

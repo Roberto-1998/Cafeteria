@@ -1,0 +1,101 @@
+mat-toolbar {
+    background: #04091e;
+    color: white;
+    height: 80px;
+}
+
+mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background: #04091e;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.content {
+    height: 100%;
+    margin: 16px;
+    margin-left: 32px;
+    /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; */
+    font-size: 2rem;
+    color: lightgray;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+}
+
+mat-icon {
+    margin-right: 8px;
+}
+
+.name {
+    margin: 0px;
+    margin-top: 8px;
+    font-weight: normal;
+    color: lightgray;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+    border-radius: 50%;
+    width: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.menu-button span,
+.menu-button mat-icon {
+    color: lightgray;
+}
+
+mat-expansion-panel-body,
+mat-expansion-panel-header {
+    padding: 0px;
+}
+
+.mat-expansion-panel {
+    background-color: #04091e;
+}
+
+:host ::ng-deep .mat-expansion-indicator::after {
+    color: lightgray;
+    margin-right: 12px;
+    margin-bottom: 8px;
+}

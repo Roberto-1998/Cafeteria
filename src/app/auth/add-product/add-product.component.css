@@ -1,0 +1,12 @@
+.form {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.example-chip-list {
+    width: 100%;
+}
