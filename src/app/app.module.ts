@@ -46,6 +46,7 @@ import { AddProductComponent } from './auth/add-product/add-product.component';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -69,7 +70,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     PagesComponent,
     BannerComponent,
     MainTitleComponent,
-
     AdminComponent,
     StartersComponent,
     MainCoursesComponent,
@@ -97,8 +97,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatSelectModule,
     MatTreeModule,
     MatChipsModule,
-    MatCheckboxModule
-
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
