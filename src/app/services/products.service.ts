@@ -24,12 +24,22 @@ export class ProductsService {
     )
   }
 
+  getProductById(id:string){
+    return this.http.get<Product>(`${baseUrl}/${id}`).pipe(
+      map((resp:any)=>resp.product)
+    )
+  }
+
   deleteProduct(id:string){
     return this.http.delete(`${baseUrl}/${id}`);
   }
 
   createProduct(product:Product){
     return this.http.post(baseUrl, product);
+  }
+
+  updateProductById(id:string, product:Product){
+    return this.http.put(`${baseUrl}/${id}`, product);
   }
 
 }

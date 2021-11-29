@@ -21,7 +21,7 @@ export class StartersComponent implements OnInit {
     this._productsService.getProducts()
     .subscribe((data)=>{
      this.starters=data.filter((product:any)=>product.category==='E');
-     console.log(this.starters);
+
   })
   }
 

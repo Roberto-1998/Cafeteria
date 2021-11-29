@@ -47,6 +47,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdateProductComponent } from './auth/update-product/update-product.component';
 
 
 
@@ -77,7 +78,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BeveragesComponent,
     TableProductsComponent,
     CategoryTitleComponent,
-    AddProductComponent
+    AddProductComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,

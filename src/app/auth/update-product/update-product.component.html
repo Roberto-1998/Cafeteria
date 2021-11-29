@@ -1,7 +1,7 @@
-<app-category-title [category]="'Create Product'"></app-category-title>
+<app-category-title [category]="'Edit Product'"></app-category-title>
 
 <div class="form mt-4">
-    <form class="col-sm-12 col-md-10 col-xl-8" autocomplete="off" [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+    <form class="col-sm-12 col-md-10 col-xl-8" autocomplete="off" [formGroup]="updateProductForm" (ngSubmit)="updateProduct()">
         <div class="row text-center">
             <p class="col-sm-12 col-md-6">
                 <mat-form-field appearance="legacy">
@@ -59,7 +59,7 @@
 
 
         <div class="d-flex justify-content-center align-items-center">
-            <button type="submit" mat-raised-button color="primary">Add Product</button>
+            <button type="submit" mat-raised-button color="primary">Update Product</button>
         </div>
 
 

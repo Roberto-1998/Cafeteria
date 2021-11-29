@@ -17,6 +17,8 @@ import { DessertsComponent } from './auth/desserts/desserts.component';
 import { BeveragesComponent } from './auth/beverages/beverages.component';
 import { TableProductsComponent } from './auth/shared/table-products/table-products.component';
 import { AddProductComponent } from './auth/add-product/add-product.component';
+import { UpdateProductComponent } from './auth/update-product/update-product.component';
+
 
 const routes: Routes = [
   {path:'auth',
@@ -27,6 +29,7 @@ const routes: Routes = [
       {path:'desserts', component:DessertsComponent},
       {path:'beverages', component:BeveragesComponent},
       {path:'add-product', component:AddProductComponent},
+      {path:'update-product/:id', component:UpdateProductComponent},
     ]},
     {path:'login', component:LoginComponent},
     {path:'', redirectTo:'login', pathMatch:'full'}

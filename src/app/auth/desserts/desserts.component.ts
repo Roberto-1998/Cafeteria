@@ -34,7 +34,7 @@ export class DessertsComponent implements OnInit {
     this._productsService.getProducts()
     .subscribe((data)=>{
      this.desserts=data.filter((product:any)=>product.category==='P');
-     console.log(this.desserts);
+
   })
   }
 

@@ -21,7 +21,7 @@ export class MainCoursesComponent implements OnInit {
     this._productsService.getProducts()
     .subscribe((data)=>{
      this.mainCourses=data.filter((product:any)=>product.category==='PP');
-     console.log(this.mainCourses);
+
   })
   }
 
