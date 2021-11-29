@@ -22,7 +22,6 @@ export class NavbarComponent implements OnInit {
   @HostListener("window:scroll", ['$event'])
   doSomethingOnScroll($event:any){
    this.scrollOffset = $event.srcElement.children[0].scrollTop;
-   console.log(this.scrollOffset);
   }
 
   addBodyClass(){

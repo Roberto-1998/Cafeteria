@@ -9,88 +9,62 @@
         <app-main-title [title]="titlePadre"></app-main-title>
 
         <div class="row menu_inner">
-            <div class="col-md-12 col-lg-10 col-xl-6">
+            <div class="col-md-12 col-lg-10 col-xl-6" *ngIf="starters.length>0">
+                <h1 class="text-center">Starters</h1>
                 <div class="menu_list">
                     <ul class="list">
-                        <li>
-                            <h4>Wonton with french fries
-                                <span>$5.00</span>
+                        <li *ngFor="let product of starters">
+                            <h4>{{product.name}}
+                                <span>${{product.price}}</span>
                             </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
+                            <p>{{product.ingredients}}</p>
                         </li>
-                        <li>
-                            <h4>Roasted Red Potatoes with Rosemary
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Bacon-Wrapped Shrimp with Garlic
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Apple Smoked Chicken with White Sauce
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Imported Oysters Grill (5 Pieces)
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Apple Smoked Chicken with White Sauce
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
+
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-12 col-lg-10 col-xl-6">
+            <div class="col-md-12 col-lg-10 col-xl-6" *ngIf="mainCourses.length>0">
+                <h1 class="text-center">Main Courses</h1>
                 <div class="menu_list pr-0">
                     <ul class="list">
-                        <li>
-                            <h4>Wonton with french fries
-                                <span>$5.00</span>
+                        <li *ngFor="let product of mainCourses">
+                            <h4>{{product.name}}
+                                <span>${{product.price}}</span>
                             </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
+                            <p>{{product.ingredients}}</p>
                         </li>
-                        <li>
-                            <h4>Roasted Red Potatoes with Rosemary
-                                <span>$5.00</span>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-10 col-xl-6 mt-5" *ngIf="desserts.length>0">
+                <h1 class="text-center">Desserts</h1>
+                <div class="menu_list">
+                    <ul class="list">
+                        <li *ngFor="let product of desserts">
+                            <h4>{{product.name}}
+                                <span>${{product.price}}</span>
                             </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
+                            <p>{{product.ingredients}}</p>
                         </li>
-                        <li>
-                            <h4>Bacon-Wrapped Shrimp with Garlic
-                                <span>$5.00</span>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-10 col-xl-6 mt-5" *ngIf="beverages.length>0">
+                <h1 class="text-center">Beverages</h1>
+                <div class="menu_list pr-0">
+                    <ul class="list">
+                        <li *ngFor="let product of beverages">
+                            <h4>{{product.name}}
+                                <span>${{product.price}}</span>
                             </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
+                            <p>{{product.ingredients}}</p>
                         </li>
-                        <li>
-                            <h4>Apple Smoked Chicken with White Sauce
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Imported Oysters Grill (5 Pieces)
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
-                        <li>
-                            <h4>Apple Smoked Chicken with White Sauce
-                                <span>$5.00</span>
-                            </h4>
-                            <p>Wonthon/Potato/Fries/Sauce</p>
-                        </li>
+
                     </ul>
                 </div>
             </div>

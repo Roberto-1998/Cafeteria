@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import {BreakpointObserver, BreakpointState} from '@angular/cdk/layout'
-import { ProductsService } from '../../services/products.service';
+import { ProductsService } from '../../../services/products.service';
 import {NestedTreeControl} from '@angular/cdk/tree';
 import {MatTreeNestedDataSource} from '@angular/material/tree';
 

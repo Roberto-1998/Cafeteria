@@ -9,15 +9,15 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ReservationComponent } from './pages/reservation/reservation.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PagesComponent } from './pages/pages.component';
-import { LoginComponent } from './auth/login/login.component';
-import { AdminComponent } from './auth/admin/admin.component';
-import { StartersComponent } from './auth/starters/starters.component';
-import { MainCoursesComponent } from './auth/main-courses/main-courses.component';
-import { DessertsComponent } from './auth/desserts/desserts.component';
-import { BeveragesComponent } from './auth/beverages/beverages.component';
-import { TableProductsComponent } from './auth/shared/table-products/table-products.component';
-import { AddProductComponent } from './auth/add-product/add-product.component';
-import { UpdateProductComponent } from './auth/update-product/update-product.component';
+import { LoginComponent } from './auth/pages/login/login.component';
+import { AdminComponent } from './auth/pages/admin/admin.component';
+import { StartersComponent } from './auth/pages/starters/starters.component';
+import { MainCoursesComponent } from './auth/pages/main-courses/main-courses.component';
+import { DessertsComponent } from './auth/pages/desserts/desserts.component';
+import { BeveragesComponent } from './auth/pages/beverages/beverages.component';
+import { TableProductsComponent } from './shared/table-products/table-products.component';
+import { AddProductComponent } from './auth/pages/add-product/add-product.component';
+import { UpdateProductComponent } from './auth/pages/update-product/update-product.component';
 
 
 const routes: Routes = [

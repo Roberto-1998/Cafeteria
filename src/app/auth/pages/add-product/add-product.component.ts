@@ -3,7 +3,6 @@ import {COMMA, ENTER} from '@angular/cdk/keycodes';
 import {MatChipInputEvent} from '@angular/material/chips';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Category } from 'src/app/interfaces/category';
-import { Ingredient } from '../../interfaces/ingredient';
 import { ProductsService } from 'src/app/services/products.service';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
