@@ -9,7 +9,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PagesComponent } from './pages.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { SharedModule } from '../shared/shared.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,9 +28,13 @@ import { RouterModule } from '@angular/router';
     PagesComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
     CommonModule,
     RouterModule,
     SharedModule,
+    CarouselModule,
+    FormsModule
+
   ]
 })
 export class PagesModule { }

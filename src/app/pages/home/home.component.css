@@ -1,0 +1,61 @@
+    .card {
+        cursor: pointer;
+        box-shadow: 7px 0px 7px rgb(116, 115, 115);
+    }
+    
+    .card .card-text {
+        font-style: italic;
+    }
+    
+    .chef_area h1 {
+        text-align: center;
+    }
+    
+    .chef_area img {
+        height: 150px;
+    }
+    
+    .single_dish .img-fluid {
+        width: 150px;
+    }
+    
+    .testimonials_area .card .img-fluid {
+        width: 80px;
+        border-radius: 50%;
+        margin: 0 auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .testimonials_area .card {
+        width: 150px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    
+    .testimonials_area .card p {
+        font-size: 0.8em;
+    }
+    
+    @media (min-width: 500px) {
+        .chef_area img {
+            height: 200px;
+        }
+        .single_dish .img-fluid {
+            width: 200px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .testimonials_area .card .img-fluid {
+            width: 100px;
+        }
+        .testimonials_area .card {
+            width: 190px;
+        }
+    }
