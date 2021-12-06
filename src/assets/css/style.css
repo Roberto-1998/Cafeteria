@@ -1314,7 +1314,7 @@ button:focus {
     overflow: hidden;
     width: 100%;
     min-height: 400px;
-    background: #f9f9ff;
+    background: white;
     z-index: 1;
 }
 
