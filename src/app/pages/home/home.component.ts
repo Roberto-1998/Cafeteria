@@ -32,15 +32,14 @@ export class HomeComponent implements OnInit {
       500: {
         items: 3
       },
-      768: {
-        items: 4
-      },
+
       900:{
-        items:5
+        items:4
       },
       1200:{
-        items:6
-      }
+        items:5
+      },
+
 
     },
     nav: true

@@ -1,26 +1,130 @@
-    .card {
-        cursor: pointer;
-        box-shadow: 7px 0px 7px rgb(116, 115, 115);
+    .banner_left {
+        background: url(../../../assets/img/slider/5.jpg) center/cover no-repeat;
     }
-    
-    .card .card-text {
-        font-style: italic;
+
+    .banner_left h1 {
+        letter-spacing: 2px;
+        font-family: 'MonteCarlo', cursive;
     }
-    
-    .chef_area h1 {
+
+    .banner_left h1 span {
+        color: rgb(226, 19, 19);
+        font-weight: bold;
+    }
+
+    .banner_left p {
+        margin-top: 10px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1em;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        text-align: left;
+        color: black;
+    }
+
+    .top_dish_area {
+        margin-top: 100px;
+    }
+
+    .single_dish {
+        cursor: initial;
+    }
+
+    .single_dish h4 {
+        font-weight: bold;
+        color: rgb(6, 23, 53);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 8px rgb(2, 2, 66);
+    }
+
+    .single_dish p {
+        font-size: 0.9em;
+        font-weight: bold;
+        color: maroon;
+    }
+
+    .single_dish p span {
+        color: black;
+        font-weight: bold;
+        text-shadow: 0px 1px 7px black;
+    }
+
+    .single_dish .price {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(6, 23, 53);
+    }
+
+    .single_dish .img-fluid {
+        width: 200px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+
+    .title span {
+        color: red;
+        text-shadow: 2px 2px 8px crimson;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        margin-right: 3px;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 2em;
+        padding-bottom: 25px;
+        letter-spacing: 5px;
+        font-family: 'Corinthia', cursive;
         text-align: center;
     }
-    
+
     .chef_area img {
         height: 150px;
     }
-    
-    .single_dish .img-fluid {
-        width: 150px;
+
+    .chef_area .card-body h1,
+    .chef_area .card-body h6,
+    .chef_area .card-body p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
     }
-    
+
+    .chef_area .card-body h1 {
+        color: rgb(6, 23, 53);
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .chef_area .card-body h6 {
+        font-size: 16px;
+        color: black;
+    }
+
+    .chef_area .card-body p {
+        color: maroon;
+        font-size: 12px;
+        letter-spacing: 1px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .testimonials_area .card .card-text {
+        font-style: italic;
+        width: 100%;
+    }
+
+    .testimonials_area .card img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+
     .testimonials_area .card .img-fluid {
-        width: 80px;
         border-radius: 50%;
         margin: 0 auto;
         -webkit-border-radius: 50%;
@@ -28,7 +132,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
     }
-    
+
     .testimonials_area .card {
         width: 150px;
         border-radius: 15px;
@@ -36,26 +140,92 @@
         -moz-border-radius: 15px;
         -ms-border-radius: 15px;
         -o-border-radius: 15px;
+        transition: 200ms ease-in-out all;
+        -webkit-transition: 200ms ease-in-out all;
+        -moz-transition: 200ms ease-in-out all;
+        -ms-transition: 200ms ease-in-out all;
+        -o-transition: 200ms ease-in-out all;
     }
-    
+
+    .testimonials_area .card:hover {
+        box-shadow: 5px 5px 10px rgb(6, 23, 53);
+        cursor: grab;
+    }
+
     .testimonials_area .card p {
         font-size: 0.8em;
     }
-    
+
     @media (min-width: 500px) {
+        .banner_left p {
+            font-size: 1.2em;
+        }
+        .main_btn {
+            width: 150px;
+            padding: 0 5px;
+        }
         .chef_area img {
             height: 200px;
         }
         .single_dish .img-fluid {
+            width: 250px;
+        }
+        .main_title h1,
+        .title {
+            font-size: 2.5em;
+        }
+        .chef_area .card-body h1 {
+            font-size: 22x;
+        }
+        .chef_area .card-body h6 {
+            font-size: 18px;
+        }
+        .chef_area .card-body p {
+            font-size: 14px;
+        }
+        .testimonials_area {
+            height: 70vh;
+        }
+        .testimonials_area .card img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .testimonials_area .card img {
+            width: 100px;
+            height: 100px;
+        }
+        .testimonials_area .card {
             width: 200px;
         }
     }
-    
+
+    @media (min-width:992px) {
+        .top_dish_area {
+            margin-top: 0px;
+        }
+        .banner_left {
+            background: none;
+        }
+    }
+
     @media (min-width: 1200px) {
-        .testimonials_area .card .img-fluid {
-            width: 100px;
+        .single_dish .img-fluid {
+            width: 550px;
         }
         .testimonials_area .card {
-            width: 190px;
+            margin: 0px;
+        }
+        .main_title h1,
+        .title {
+            font-size: 3em;
+        }
+        .chef_area img {
+            height: 300px;
+        }
+        .testimonials_area {
+            height: 80vh;
         }
     }
