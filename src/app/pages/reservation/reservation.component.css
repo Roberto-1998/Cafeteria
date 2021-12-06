@@ -12,3 +12,9 @@
 .table_form {
     border: 1px #04091e solid;
 }
+
+@media (min-width:992px) {
+    .reservation {
+        margin: 0;
+    }
+}

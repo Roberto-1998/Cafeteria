@@ -21,11 +21,6 @@ import { PagesModule } from './pages/pages.module';
 
 
 
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +34,7 @@ import { PagesModule } from './pages/pages.module';
     FormsModule,
     MaterialModule,
     AuthModule,
-    PagesModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
