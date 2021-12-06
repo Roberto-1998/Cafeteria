@@ -12,7 +12,7 @@ export class ReservationComponent implements OnInit {
     link:'/reservation'
   }
 
-  titlePadre:string='Pick a Date!!';
+
 
   constructor() { }
 
