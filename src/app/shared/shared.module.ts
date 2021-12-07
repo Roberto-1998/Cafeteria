@@ -9,6 +9,7 @@ import { CategoryTitleComponent } from './category-title/category-title.componen
 import { TableProductsComponent } from './table-products/table-products.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../material/material.module';
+import { GalleryCarouselComponent } from './gallery-carousel/gallery-carousel.component';
 
 
 
@@ -20,6 +21,7 @@ import { MaterialModule } from '../material/material.module';
     MainTitleComponent,
     CategoryTitleComponent,
     TableProductsComponent,
+    GalleryCarouselComponent
   ],
   imports: [
     CommonModule,
@@ -33,6 +35,7 @@ import { MaterialModule } from '../material/material.module';
     MainTitleComponent,
     CategoryTitleComponent,
     TableProductsComponent,
+    GalleryCarouselComponent
   ]
 })
 export class SharedModule { }

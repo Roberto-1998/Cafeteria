@@ -14,6 +14,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
+import { MaterialModule } from '../material/material.module';
+
 
 
 
@@ -36,6 +38,7 @@ import { AgmCoreModule } from '@agm/core';
     SharedModule,
     CarouselModule,
     FormsModule,
+    MaterialModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyAkmzq5JRQVefk2c9uKU-8UUstE1_mKlwM'
     })

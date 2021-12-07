@@ -6,77 +6,22 @@
     <div class="container">
         <app-main-title [title]="titlePadre"></app-main-title>
 
-        <div class="row" id="lightgallery">
-            <div class="col-lg-7 all-image" data-src="assets/img/gallery/g1.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g1.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
+        <div class="gallery">
+            <div *ngFor="let image of images;let i = index " [style.gridRow]="image.row" [style.gridCol]="image.col" class="image">
+                <img [src]="image.url" (click)="selectedImage = i + 1">
+                <span>
+                    <mat-icon>
+                      photo_camera
+                    </mat-icon>
+                </span>
 
-            <div class="col-lg-5 all-image" data-src="assets/img/gallery/g2.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g2.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 all-image" data-src="assets/img/gallery/g3.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g3.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 all-image" data-src="assets/img/gallery/g4.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g4.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 all-image" data-src="assets/img/gallery/g5.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g5.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-5 all-image" data-src="assets/img/gallery/g6.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g6.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-7 all-image" data-src="assets/img/gallery/g7.jpg">
-                <div class="single-gallery">
-                    <div class="overlay"></div>
-                    <img class="img-fluid w-100" src="assets/img/gallery/g7.jpg" alt="">
-                    <div class="content">
-                        <i class="lnr lnr-picture"></i>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<app-gallery-carousel *ngIf="selectedImage !==0 " (closeCarousel)="selectedImage = 0" [images]="images" [selectedImage]="selectedImage"></app-gallery-carousel>
+
+
 <!--================ End Gallery Area =================-->
