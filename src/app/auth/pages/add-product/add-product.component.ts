@@ -45,7 +45,7 @@ export class AddProductComponent implements OnInit {
   removable = true;
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
-  ingredients: string[] = [];
+  ingredients: string[] = ['queso', 'jamón'];
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
