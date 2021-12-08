@@ -6,15 +6,19 @@
     <div class="container">
         <app-main-title [title]="titlePadre"></app-main-title>
 
-        <div class="gallery row text-center">
-            <div class="col-12 col-md-3" *ngFor="let image of images;let i = index " [style.gridRow]="image.row" [style.gridCol]="image.col" class="image">
+        <div class="gallery row m-auto text-center">
+            <div class="col-12 col-md-3 image" *ngFor="let image of images;let i = index">
                 <img [src]="image.url" class="img-fluid" (click)="selectedImage = i">
                 <span>
-                    <mat-icon>
-                      photo_camera
-                    </mat-icon>
-                </span>
+                              <mat-icon>
+                                photo_camera
+                              </mat-icon>
+                          </span>
             </div>
+
+
+
+
         </div>
     </div>
 </section>
