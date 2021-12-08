@@ -6,22 +6,21 @@
     <div class="container">
         <app-main-title [title]="titlePadre"></app-main-title>
 
-        <div class="gallery">
-            <div *ngFor="let image of images;let i = index " [style.gridRow]="image.row" [style.gridCol]="image.col" class="image">
-                <img [src]="image.url" (click)="selectedImage = i + 1">
+        <div class="gallery row text-center">
+            <div class="col-12 col-md-3" *ngFor="let image of images;let i = index " [style.gridRow]="image.row" [style.gridCol]="image.col" class="image">
+                <img [src]="image.url" class="img-fluid" (click)="selectedImage = i">
                 <span>
                     <mat-icon>
                       photo_camera
                     </mat-icon>
                 </span>
-
             </div>
         </div>
     </div>
 </section>
 
 
-<app-gallery-carousel *ngIf="selectedImage !==0 " (closeCarousel)="selectedImage = 0" [images]="images" [selectedImage]="selectedImage"></app-gallery-carousel>
+<app-gallery-carousel *ngIf="selectedImage !==-1 " (closeCarousel)="selectedImage = -1" [images]="images" [selectedImage]="selectedImage"></app-gallery-carousel>
 
 
 <!--================ End Gallery Area =================-->

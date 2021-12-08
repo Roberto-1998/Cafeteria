@@ -13,7 +13,7 @@ export class GalleryComponent implements OnInit {
     link:'/gallery'
   }
 
-  selectedImage?: any=0;
+  selectedImage?: any=-1;
 
   images=[
     {

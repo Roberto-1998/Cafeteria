@@ -6,7 +6,6 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
-import { ReservationComponent } from './pages/reservation/reservation.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PagesComponent } from './pages/pages.component';
 import { LoginComponent } from './auth/pages/login/login.component';
@@ -44,7 +43,7 @@ children:[
   {path:'contact', component:ContactComponent},
   {path:'about', component:AboutComponent},
   {path:'gallery', component:GalleryComponent},
-  {path:'reservation', component:ReservationComponent},
+
   {path:'', redirectTo:'home', pathMatch:'full'},
 ]
 },

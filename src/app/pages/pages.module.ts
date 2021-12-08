@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PagesComponent } from './pages.component';
-import { ReservationComponent } from './reservation/reservation.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -25,7 +24,7 @@ import { MaterialModule } from '../material/material.module';
     HomeComponent,
     ContactComponent,
     MenuComponent,
-    ReservationComponent,
+
     GalleryComponent,
     AboutComponent,
     NotFoundComponent,
