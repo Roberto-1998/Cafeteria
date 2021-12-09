@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   baseUrl:'http://localhost:3000/api/products',
-  username:'Roberto',
+  username:'roberto',
   password:'1234'
 };
 

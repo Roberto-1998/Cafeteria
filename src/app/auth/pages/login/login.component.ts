@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-   if(this.loginForm.valid && (usernameForm===username) && (passwordForm===password)){
+   if(this.loginForm.valid && (usernameForm.toLowerCase()===username) && (passwordForm===password)){
     Swal.fire({
       position: 'center',
       icon: 'success',

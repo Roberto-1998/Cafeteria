@@ -21,9 +21,9 @@ export class AddProductComponent implements OnInit {
 
   formSubmitted=false;
   addProductForm=this.fb.group({
-    name:['Croquetas', [Validators.required]],
-    price:['125',[Validators.required]],
-    category:['E', [Validators.required]],
+    name:['', [Validators.required]],
+    price:['',[Validators.required]],
+    category:['', [Validators.required]],
     top3:[false],
     ingredients:['']
   })
@@ -45,7 +45,7 @@ export class AddProductComponent implements OnInit {
   removable = true;
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
-  ingredients: string[] = ['queso', 'jamón'];
+  ingredients: string[] = [];
 
   add(event: MatChipInputEvent): void {
     const value = (event.value || '').trim();
