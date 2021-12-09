@@ -10,3 +10,27 @@
 .example-chip-list {
     width: 100%;
 }
+
+mat-form-field,
+mat-checkbox {
+    color: black;
+    font-weight: bold;
+    background: #fafafa;
+}
+
+.verde {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+::ng-deep .mat-chip.mat-standard-chip {
+    background: rgb(211, 243, 255);
+    font-weight: bold;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fafafa;
+}
