@@ -5,11 +5,21 @@
                 <a routerLink="/home"><img src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download" alt="">Return home</a>
             </div>
             <div class="contact">
-                <form action="">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
                     <h3>SIGN IN</h3>
-                    <input type="text" placeholder="USERNAME">
-                    <input type="text" placeholder="PASSWORD">
-                    <button class="submit" routerLink="/auth/admin">LET'S GO</button>
+                    <input type="text" placeholder="USERNAME" formControlName="username">
+                    <input type="text" placeholder="PASSWORD" formControlName="password">
+
+                    <div class="row">
+                        <div class="col text-danger">
+                            <p *ngIf="campoNoValido('username')">* El nombre de usuario es requerido</p>
+                            <p *ngIf="campoNoValido('password')">* La contraseña es requerida</p>
+
+                        </div>
+                    </div>
+
+
+                    <button class="submit">LET'S GO</button>
                 </form>
             </div>
         </div>

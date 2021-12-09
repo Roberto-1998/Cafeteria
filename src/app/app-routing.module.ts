@@ -29,6 +29,7 @@ const routes: Routes = [
       {path:'beverages', component:BeveragesComponent},
       {path:'add-product', component:AddProductComponent},
       {path:'update-product/:id', component:UpdateProductComponent},
+      {path:'', redirectTo:'starters', pathMatch:'full'},
     ]},
     {path:'login', component:LoginComponent},
     {path:'', redirectTo:'login', pathMatch:'full'}

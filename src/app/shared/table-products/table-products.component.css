@@ -1,13 +1,73 @@
-table {
-    width: 70%;
-    margin: 0 auto;
+.table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
 }
 
-.mat-form-field {
+.table th {
     font-size: 14px;
-    width: 100%;
+    font-weight: bold;
+    color: black;
+}
+
+.table td {
+    font-size: 12px;
 }
 
 button {
     margin-right: 5px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.top {
+    color: gold;
+    text-shadow: 1px 1px 10px goldenrod;
+}
+
+mat-icon {
+    font-size: 22px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 250ms ease-in-out all;
+    -webkit-transition: 250ms ease-in-out all;
+    -moz-transition: 250ms ease-in-out all;
+    -ms-transition: 250ms ease-in-out all;
+    -o-transition: 250ms ease-in-out all;
+}
+
+.edit {
+    color: blue;
+}
+
+.delete {
+    color: red;
+}
+
+mat-icon:hover {
+    text-shadow: 2px 2px 5px rgb(66, 2, 2);
+}
+
+@media (min-width:700px) {
+    .table {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:976px) {
+    .table {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:1200x) {
+    .table {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
